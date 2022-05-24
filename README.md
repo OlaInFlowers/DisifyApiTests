@@ -7,9 +7,9 @@
 ## Introduction
 Automated API Testing – a collection of automated API tests cases to verificate and validate email addresses, using Postman technology.
 
-Why API testing? 
+Why API testing is more efficient and accurate than manual testing?
 
-1. [Exact bug localization]
+1. [Exact bug localization] 
 For example REST API ensures communication between the client and the server using HTTP requests (Get, Post, Put, Delete…), HTTP requests contain the client's query, the answer is contained in the response body. In some cases manually testing interface is impossible to localize certain bugs. Api testing consists in obtaining responses directly from the server, thus omitting the long and often unreliable way of manual testing, so the tester is able to quick obtain an accurate response from the server about bug localization. 
 
 2. [Time]
@@ -25,9 +25,9 @@ Nowadays one of the most popular  architecture is the architecture of microservi
 
 Why use Postman technology to test API?
 
-All saved queries sync in the cloud. In addition to sending queries to the API, Postman has a Tests tab, which allows you to enter the script using JavaScript. Thanks to this, we can test our response received from the API
+1. All saved queries sync in the cloud. In addition to sending queries to the API, Postman has a Tests tab, which allows you to enter the script using JavaScript. Thanks to this, we can test our response received from the API
 
-Thanks to the possibility of introducing test scripts, Postman can allow us to automate the verification of websites. The benefit of introducing automation to our queries will be the ability to perform regression tests smoothly.
+2. Thanks to the possibility of introducing test scripts, Postman can allow us to automate the verification of websites. The benefit of introducing automation to our queries will be the ability to perform regression tests smoothly.
 
 
 ## Limitations
