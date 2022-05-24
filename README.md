@@ -23,6 +23,13 @@ Api testing can be started at the initial stage of the software development life
 4. [The ability to participate in projects where working with API becomes necessary to design tests]
 Nowadays one of the most popular  architecture is the architecture of microservices, when the application is not monolithic but becomes a superset of independent applications which exchange data with each other. In this case, API testing becomes particularly desirable, be-cause it allows to check the correctness of integration between separate services and ma-intaining the logic of the system functioning. That is why in this kind of project some tests should be reproduced only through software interfaces.The ability to participate in projects where working with API becomes necessary to design tests.
 
+Why use Postman technology to test API?
+
+All saved queries sync in the cloud. In addition to sending queries to the API, Postman has a Tests tab, which allows you to enter the script using JavaScript. Thanks to this, we can test our response received from the API
+
+Thanks to the possibility of introducing test scripts, Postman can allow us to automate the verification of websites. The benefit of introducing automation to our queries will be the ability to perform regression tests smoothly.
+
+
 ## Limitations
 
 
