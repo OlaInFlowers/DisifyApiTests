@@ -31,58 +31,48 @@ Why use Postman technology to test API?
 
 ## Description
 
-So the first way to test API requires writing request. Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation)
-
-{
+So the first way to test API requires writing request. Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation){
     "format": true,
     "domain": "gmail.com",
     "disposable": false,
     "dns": true,
     "whitelist": true
-}
-
-Thanks to Json response, you can analyze if it`s the same as in the documentation.
+} Thanks to Json response, you can analyze if it`s the same as in the documentation.
 
 Apart from Response analyze, you can run both functional and performing tests and much more 😊 
 Postman has written automated test cases snippets in Java Script, therefore writing test cases is faster and more enjoyable 😊
 Modyfing the postman snippets tests you can test:
 
-1. server response, 
+1. Server response 
 
 pm.test("Successful email verification", function () {
     pm.response.to.have.status(200);
 });
 
-2. response time – necessary in performance testing 
+2. Response time – necessary in performance testing :)
 
 pm.test("Response time is less than 1s", function () {
     pm.expect(pm.response.responseTime).to.be.below(1000);
 });
 
-3. the Response json string from the disify documentation (format, domain, disposable, dns) written below, verification format test case for valid email format 
+3. The response json string from the disify documentation (format, domain, disposable, dns) written below, verification format test case for valid email format 
 
 pm.test("When email is correct response should contain format property equals true", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.format).to.eql(true);
 });
 
-In Contrast disposable test case for non-disposable email format differs variable json data disposable to equals false as below:
-
-pm.test("When email is non-disposa-ble response should contain disposable property equals false", function () {
+In Contrast disposable test case for non-disposable email format differs variable json data disposable to equals false as below: pm.test("When email is non-disposa-ble response should contain disposable property equals false", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.disposable).to.eql(false);
 });
 
-Response can differ from the documentation. Inability to recognize the email format (with-out @) can occur an information:
-
-{
+Response can differ from the documentation. Inability to recognize the email format (with-out @) can occur an information: {
     "format": false
 } 
 
-Server cannot recognize format of the domain that`s why response doesn`t contain infor-mation about domain, disposable and dns.
-But non-existing email domain in response contains information about valid format, fic-tional domain name, non disposable and false dns
-
-{
+Server cannot recognize format of the domain that is why response does not contain information about domain, disposable and dns.
+But non-existing email domain in response contains information about valid format, fic-tional domain name, non disposable and false dns {
     "format": true,
     "domain": "il.com",
     "disposable": false,
