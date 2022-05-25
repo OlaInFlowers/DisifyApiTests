@@ -1,5 +1,10 @@
 #  DisifyApiTests
 
+## HTTP Rest Api
+
+*Http Rest API* ensures communication between services using HTTP protocol. According to requirements there are available various types of method - Get, Post, Put, Delete etc. Http request consist of url address, query parameters, HTTP method, headers and body. The answer for Http request is response which contains status code, headers and body.
+*Http protocol* is widely used in mircoservices architecture as well as in classical communication between client and server. 
+
 ## Link to Postman tests collection
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/7c78cc74ba9234c0e23f?action=collection%2Fimport)
@@ -10,7 +15,7 @@ Automated API Testing – a collection of automated API tests cases to verificat
 Why API testing is more efficient and accurate than manual testing?
 
 1. [Exact bug localization] 
-For example REST API ensures communication between the client and the server using HTTP requests (Get, Post, Put, Delete…), HTTP requests contain the client's query, the answer is contained in the response body. In some cases manually testing interface is impossible to localize certain bugs. Api testing consists in obtaining responses directly from the server, thus omitting the long and often unreliable way of manual testing, so the tester is able to quick obtain an accurate response from the server about bug localization. 
+In some cases manually testing interface is impossible to localize certain bugs. Api testing consists in obtaining responses directly from the server, thus omitting the long and often unreliable way of manual testing, so the tester is able to quick obtain an accurate response from the server about bug localization. 
 
 2. [Time]
 API testing is much faster and more efficient than graphical user interface testing. Manually testing consume a lot of time and focus, sometimes one wrong click can ruin the test result and the work must be done from the beginning. In this case Api testing can save you a lot of time.
