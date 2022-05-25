@@ -40,13 +40,17 @@ Nowadays one of the most popular architecture is the architecture of microservic
 
 ## Description
 
-So the first way to test API requires writing request. Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation){
+So the first way to test API requires writing request. Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation)
+```
+{
     "format": true,
     "domain": "gmail.com",
     "disposable": false,
     "dns": true,
     "whitelist": true
-} Thanks to Json response, you can analyze if it`s the same as in the documentation.
+}
+```
+Thanks to Json response, you can analyze if it`s the same as in the documentation.
 
 Apart from Response analyze, you can run both functional and performing tests and much more 😊 
 Postman has written automated test cases snippets in Java Script, therefore writing test cases is faster and more enjoyable 😊
