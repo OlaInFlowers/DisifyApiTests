@@ -31,7 +31,7 @@ Why use Postman technology to test API?
 
 ## Description
 
-So the first way to test API requires writing request, using endpoint according to disify doc-umentation writing endpoint - requires just email parameter and email address
+So the first way to test API requires writing request, using endpoint according to disify documentation writing endpoint - requires just email parameter and email address
 
 Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation)
 
