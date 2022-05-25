@@ -31,9 +31,7 @@ Why use Postman technology to test API?
 
 ## Description
 
-So the first way to test API requires writing request, using endpoint according to disify documentation writing endpoint - requires just email parameter and email address
-
-Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation)
+So the first way to test API requires writing request. Positive single email test verification get response - results displayed in JSON string, as above with additional information that email is whitelisted (it wasn’t mentioned in the doc-umentation)
 
 {
     "format": true,
@@ -47,10 +45,9 @@ Thanks to Json response, you can analyze if it`s the same as in the documentatio
 
 Apart from Response analyze, you can run both functional and performing tests and much more 😊 
 Postman has written automated test cases snippets in Java Script, therefore writing test cases is faster and more enjoyable 😊
-
 Modyfing the postman snippets tests you can test:
 
-1 server response, 
+1. server response, 
 
 pm.test("Successful email verification", function () {
     pm.response.to.have.status(200);
@@ -155,7 +152,7 @@ Testing two email addresses response is compatible witch indications of document
 Error occurs while testing one disposable (hezywope@thichanthit.com) and one non-disposable email address, after sending correct request, respond body contains information that valid address emails equals 1 while request contains two valid emails. (Must note that body contains correct information about total addresses number, invalid format, disposable and unique.)
 Test case:
 
-pm.test("When checking two valid emails response should contain valid property equals 2", function () {
+ pm.test("When checking two valid emails response should contain valid property equals 2", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.valid).to.eql(2);
 });
