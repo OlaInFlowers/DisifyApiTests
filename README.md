@@ -192,5 +192,5 @@ Post request while verifying two email addresses – the response body is compat
 ## Conclusion:
 
 Api testing consume less time than manual testing, can exact localize a bug, testing Api can start at a very beginning of software development lifecycle, which can save time and money. Moreover nowadays microservices architecture is very popular, and preparing test cases for this kind of project requires good knowledge of Api testing.
-Using Postman technology, you can fast write test cases using Postman snippets and what is important you can save them in certain  collection, which enable fast automated regression testing every time you need it.
+Using Postman technology, you can fast write test cases using Postman snippets and what is important you can save them in certain collection, which enable fast automated regression testing every time you need it.
 There are also some cons - Postman test error messages can be unclear and confusing for some cases, but in my opinion after some time tester is getting used to those types of communicates.
