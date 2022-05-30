@@ -1,6 +1,6 @@
 #  DisifyApiTests
 ## Goals and limitations of the project
-The main goal of the project is getting familiar with communication using Http Api as well as introduction to testing process automation using Postman.
+The main goal of the project is to get familiar with communication using Http Api as well as introduction to testing process automation using Postman.
 Http Api, which I've tested is available and described at https://www.disify.com/. **Disify** offers validation and verification email address. It's possible to check if email address is disposable, temporary, has invalid MX records, detect if its mistyped, inactive or non-existent.<br/>
 Within the project I chose several ednpoints (the most interesting in my opinion) and wrote various types of tests in Postman.
 
@@ -92,7 +92,7 @@ Response body:
 ### Automated API testing is more efficient and accurate than manual testing
 
 1. **Separated Api Testing / Exact bug localization**<br/>
-Manual testing perceived as E2E tests checks all layers of application - UI, server layer, database. It has pros and cons. Difficulty in bug localization is the one of the biggest problems - there is no certainty whether the problem is in UI or on the Api side. Omitting Frontend makes possible to accurate bug locaalization on Api side.
+Manual testing perceived as E2E tests checks all layers of application - UI, server layer, database. It has pros and cons. Difficulty in bug localization is the one of the biggest problems - there is no certainty whether the problem is in UI or on the Api side. Omitting Frontend makes possible to accurate bug localization on Api side.
 
 2. **Time**<br/>
 Api testing is much faster and more efficient than UI testing. Manually testing consumes a lot of time and focus, sometimes one wrong click can ruin the test result and the work must be done from the beginning. In this case Api testing can save you a lot of time. Automated Api tests are repeatable and doesn't rely on human factor.
